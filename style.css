@@ -168,6 +168,43 @@ main {
   color: #475569;
 }
 
+/* Footer subscribe form: simple responsive layout */
+.subscribe-form {
+  max-width: 720px;
+  margin: 0.5rem auto 0;
+}
+.subscribe-row {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe-row input[type="email"] {
+  flex: 1;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+}
+.subscribe-row button.btn-subscribe {
+  background: #0071c5;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.subscribe-row button.btn-subscribe:hover {
+  background: #005fa3;
+}
+.subscribe-note {
+  margin: 0.5rem 0 0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+.footer-copy { margin-top: 0.75rem; color: #475569; }
+
 @media (max-width: 900px) {
   .concept-cards {
     grid-template-columns: repeat(2, minmax(220px, 1fr));
@@ -201,5 +238,11 @@ main {
 
   .concept-cards {
     grid-template-columns: 1fr;
+  }
+  .subscribe-row {
+    flex-direction: column;
+  }
+  .subscribe-row button.btn-subscribe {
+    width: 100%;
   }
 }

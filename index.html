@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel Timeline: Inception to Future Trends</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
   <!-- Hero section with Intel logo and introduction -->
@@ -161,7 +162,16 @@
   </main>
 
   <footer class="page-footer">
-    <p>Learn how Intel evolved from its earliest chips to modern designs and future trends.</p>
+    <form class="subscribe-form" action="#" method="post" aria-label="Subscribe to newsletter">
+      <label for="email" class="sr-only">Email address</label>
+      <div class="subscribe-row">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn-subscribe">Subscribe</button>
+      </div>
+      <p class="subscribe-note">Get updates on Intel innovations. We respect your privacy.</p>
+    </form>
+    <p class="footer-copy">Learn how Intel evolved from its earliest chips to modern designs and future trends.</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
